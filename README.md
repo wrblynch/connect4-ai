@@ -1,10 +1,3 @@
-# COGS118A Project template
-This is your group repo for your final project for COGS118A
-
-This repository is publicly visible! We will be using that feature to do peer review of projects.
-
-Template notebooks for each component are provided. Only work on the notebook prior to its due date. After each submission is due, move onto the next notebook (For example, after the proposal is due, start working in the Data Checkpoint notebook).
-
-This is your repo. You are free to manage the repo as you see fit, edit this README, add data files, add scripts, etc. So long as there are the four files above on due dates with the required information, the rest is up to you all.
-
-Also, you are free and encouraged to share this project after the course and to add it to your portfolio. Just be sure to fork it to your GitHub at the end of the quarter!
+# Connect-4 Supervised Machine Learning Models vs Minimax Search
+---
+Our goal is to figure out if certain machine learning algorithms are able to beat the popular minimax search algorithm in a game of connect 4. We want the algortihms to determine whether or not given any board state in a game without a guaranteed loss in the next move, a "checkmate", can result in a victory for the player. Our data contains all possible board states where either player has not won yet, as well as whether or not that board state is a win for a particular player. It is measured by having a variable for every single spot in a connect four board, and which piece is in that spot. Other variables include the two players, the board, the number of turns required to win, and the winrate. We created a decision tree and a support vector machine model along with a minimax search algorithm. We then created a simulation to have minimax and our models play against each other and recorded the winrate of both models and the minimax algorithm. Our results indicated that given our dataset and our methodologies to implementing models, classifiers cannot outperform minimax.
